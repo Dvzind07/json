@@ -5,9 +5,15 @@ const dados = fs.readFileSync('dados.json', 'utf-8'); // Lê o arquivo dados.jso
 const usuarios = JSON.parse(dados); // Transforma o JSON em objeto JS
 
 usuarios.push({
-    id: 3,
+    id: 4,
     nome: "Tarcisio",
     idade: 40
+});
+
+usuarios.push({
+    id: 5,
+    nome: "Murilo",
+    idade: 15
 });
 
 console.log("Usuários cadastrados no .json:", usuarios);
